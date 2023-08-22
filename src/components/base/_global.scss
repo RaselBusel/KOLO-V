@@ -1,0 +1,57 @@
+@use "../base/variables" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: $font-base;
+	font-weight: $font-weight-normal;
+	color: $grey-black; //color variable set elsewhere
+	font-size: 1em;
+	font-weight: $font-weight-normal;
+	line-height: $line-height-base;
+	scroll-behavior: smooth;
+	//linee-height  !!!!!!!
+	// display: flex;
+	// min-height: 100vh;
+	// flex-direction: column;
+  }
+
+// Headings   ???
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+  font-weight: normal;
+}
+
+
+//  TODO  implement this - very usefull
+/*
+ul {
+  &:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+
+    & > li {
+      list-style-type: none;
+    }
+  }
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+  // Gets rid of tap active state
+  -webkit-tap-highlight-color: transparent;
+}
+*/

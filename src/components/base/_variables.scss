@@ -1,0 +1,195 @@
+
+//
+// Table of Contents:
+//
+// 1. Colors
+// 2. Typography
+// 3. Container / Spaser / Breakpoint
+// 4. Buttons
+
+
+// 1. Colors
+// ==========================================================================
+
+$primary-pink-base: 	#9C075A;
+$pink-2:              #920061;    //britishcouncil
+$pink-lighten-1:		  #d81b60;
+$purple-darken:       #663399;
+$purple-lighten-1:    #b599ff;
+$purple-lighten-2:#e8dffe;
+$primary-dark-blue:		#0c133a;
+$primary-dark-blue-hover:#343a57;
+$background-grey-1:     #eef1f6;
+$background-grey-2:     #F9F9FB;        //softer
+$background-grey-blue:  #eaf0f9;
+$white-full:            #ffffff;
+$background-black-shadow: rgba(0, 0, 0 , .15);
+// +++++  #9042c517 97%)    back gradiet #2 module
+//$navbar-font-color: #c4c2c2;   grey instead
+//$font-color-pink: #9C075A;
+
+$grey-black:	  #212121;
+$grey-darker:   #424242;
+$grey-dark:     #616161;
+$grey:        	#757575;
+$grey-light:   	#bdbdbd;
+$grey-lighter:  #e0e0e0;
+$grey-lightest: #eeeeee;
+$grey-grid-light: #fafbfd;
+
+$btn-header-linear-gradient:
+#9e3afc,
+#855aff,
+#2e7bff,
+#2462ff,
+#855aff,
+#ea24f8,
+#be36b0,
+#9C075A;
+//#c07807,
+//#a29a00;
+$btn-header-linear-gradient-2:
+#af92fd,
+#b599ff,
+#bb55ff,
+#d81bbd,
+#d81b60,
+#db145d;
+
+//SORT or delete this colors
+//$primary-color: color("materialize-red", "lighten-2") !default;
+//$primary-color-light: lighten($primary-color, 15%) !default;
+//$primary-color-dark: darken($primary-color, 15%) !default;
+
+//$secondary-color: color("teal", "lighten-1") !default;
+//$success-color: color("green", "base") !default;
+//$error-color: color("red", "base") !default;
+//$link-color: color("light-blue", "darken-1") !default;
+
+
+// 2. Typography
+// ==========================================================================
+
+$font-main: 'Libre Franklin', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-base:	'Inter', "Roboto", "Helvetica Neue", "Arial", sans-serif;
+$font-family-monospace: "Source Code Pro", "Courier New", mono, monospace;
+//$render-mode: optimizeLegibility;
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$font-size-lg: 5rem;          //80
+$h1-fontsize: 4.2rem;         //67.2
+$h2-fontsize: 3.56rem;        //56.96
+$h3-fontsize: 2.92rem;        //46.72
+$h4-fontsize: 2.28rem;        //36.48
+$h5-fontsize: 1.64rem;        //26.24
+$h5-fontsize-mid: 1.333rem;   //21.33px
+$h6-fontsize: 1.15rem;        //18.4
+$font-size-base: 1rem;        //16px
+$font-size-sm-1: 0.875rem;    //14px
+$font-size-sm-2: 0.75rem;    //12px
+
+
+// 3. Container / Spaser / Breakpoint
+// ==========================================================================
+
+// Media Query Ranges
+$breakpoint-md: 768px;
+$breakpoint-lg: 1008px;
+$breakpoint-xl: 1296px;
+
+$container-max-width-xl: 1200px;  	// 1296px  / 75rem
+$container-max-width-lg: 960px;  	  // 1008px  / 60rem
+$container-max-width-md: 720px;  	  // 768px   / 45rem
+
+$typography-max-screen: 81rem;  	  // 1296px
+$typography-min-screen: 48rem;      // 768px
+
+$space-2: 0.125rem;
+$space-4: 0.25rem;
+$space-8: 0.5rem;
+$space-12: 0.75rem;
+$space-16: 1rem;
+$space-24: 1.5rem;
+$space-32: 2rem;
+$space-40: 2.5rem;
+$space-48: 3rem;
+$space-64: 4rem;
+$space-96: 6rem;
+$space-128: 8rem;
+$space-160: 10rem;
+$space-192: 12rem;
+$space-240: 15rem;
+$space-304: 19rem;
+
+$z-index-overlay: -10;
+$z-index-bg1: -1;
+$z-index-0: 0;
+$z-index-10: 10;
+$z-index-30: 30;
+$z-index-20: 20;
+$z-index-40: 40;
+$z-index-50: 50;
+$z-index-100: 100;
+$z-index-500: 500;
+$z-index-max: 1000;
+
+// 4. Buttons
+// ==========================================================================
+
+// Shared styles
+$button-border: none !default;
+$button-font-size: 1.15rem;           //18.4px
+$button-height: 1.8rem; //2rem;                 //32px
+$button-padding: 0.2em 1em;              //16px
+$button-radius: .5rem;
+$button-background: $primary-pink-base;
+$button-background-hover: lighten($button-background, 7%);
+$button-color: $white-full;
+//$button-background-focus: lighten($secondary-color, 4%) !default;
+//$button-icon-font-size: 1.3rem !default;
+
+// Large buttons
+$button-large-font-size: 1.375rem;              //22px
+$button-large-height: $button-height * 1.5;
+$button-large-padding: 0.4em 2em;
+$button-large-radius: 1.33rem;
+//$button-floating-large-size: 56px !default;
+//$button-large-icon-font-size: 1.6rem !default;
+
+// Small buttons
+$button-small-font-size: 13px !default;
+$button-small-icon-font-size: 1.2rem !default;
+$button-small-height: $button-height * .9 !default;
+$button-floating-small-size: $button-height * .9 !default;
+
+// Flat buttons
+$button-flat-color: #343434 !default;
+$button-flat-disabled-color: lighten(#999, 10%) !default;
+
+// 5. Animation
+// ==========================================================================
+
+$anime-cubic-bezier: cubic-bezier(0.2,0.8,0.2,1);
+$slideTransition: 1.2s 0.2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+$box-shadow-img-wrapper:
+1px 2px 2px hsl(0deg 0% 0% / 0.1),
+0px 4px 4px hsl(0deg 0% 0% / 0.01),
+0px 8px 8px hsl(0deg 0% 0% / 0.2),
+0px 16px 16px hsl(0deg 0% 0% / 0.2),
+16px 32px 32px hsl(0deg 0% 0% / 0.2);
+
+$box-shadow-feature-content:
+0 1px 1px hsl(0deg 0% 0% / 0.075),
+0 2px 2px hsl(0deg 0% 0% / 0.03),
+0 4px 4px hsl(0deg 0% 0% / 0.03),
+0 8px 8px hsl(0deg 0% 0% / 0.075),
+0 16px 16px hsl(0deg 0% 0% / 0.075);

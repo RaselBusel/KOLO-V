@@ -1,0 +1,31 @@
+@use "../base/variables" as *;
+
+
+// Mixins
+// ==========================================================================
+
+// Header size calc for <span> tag
+@mixin span-header {
+  $min-fontsize: $font-size-base;
+  $max-fontsize: $h6-fontsize;
+  $mid-fontsize: calc-font-size-mid($typography-min-screen, $typography-max-screen, $min-fontsize, $max-fontsize);
+  //padding-top: 40px;
+  font: {
+    size: clamp($min-fontsize, $mid-fontsize, $max-fontsize);
+    weight: $font-weight-semibold;
+  }
+}
+
+@mixin bottom-circled-background {
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    width: 100%;
+    height: 40px;
+    background: $white-full;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    border-top: solid 1px $grey-lighter;
+    left: 0%;
+}

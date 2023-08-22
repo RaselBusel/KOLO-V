@@ -1,0 +1,39 @@
+{
+  "name": "kolo_project",
+  "version": "0.0.1",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/components/style.scss src/components/style.css",
+    "sasnav": "sass src/components/navbar/_navbar.scss src/components/navbar/navbar.css",
+    "stylelint": "stylelint **/dist/*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GIT_url"
+  },
+  "keywords": [
+    "qqqqqq"
+  ],
+  "author": "Rasel",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "saas": "^1.0.0",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "normalize.css": "^8.0.1"
+  }
+}
